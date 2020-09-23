@@ -10,14 +10,18 @@ var passwordText = document.querySelector("#password");
 
 // Write password to the #password input
 function writePassword() {
+  password.length = 0;
   //user inputs how many characters for password
-  characterAmount = prompt(
-    "How many characters would you like your password to be?  Choose between 8 and 128."
-  );
+  var characterAmount = prompt(
+    "How many characters would you like your password to be?  Choose between 8 and 128.");
+
   // if user chooses password length outside the range or isn't a number
   if (characterAmount < 8 || characterAmount > 128) {
     alert("Your password length should be between 8 and 128.");
-    writePassword();
+    return writePassword();
+  } if (isNaN(characterAmount) === true) {
+    alert("This should be a numeric value.")
+    return writePassword();
   }
   var includeUpper = confirm(
     "Would you like uppercase characters in your password?"
