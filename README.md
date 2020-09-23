@@ -2,16 +2,17 @@
 
 Installation:
 
-1.  create defined variables to be included in the password generator
+1.  Created defined variables in Javascript to be included in the password generator
 
-2.  create prompts and confirms for the series of questions about user choose for password length and criteria
+2.  Created prompts and confirms for the series of questions about user choose for password length and criteria
 
-3.  created user function to return variables
+3.  Created user function to return variables
 
-4.  created function to write the actual password
+4.  Created function to write the actual password
 
 Use:
 
 User can choose to use this tool for internet security
+User can choose from a variety of numbers, symbols, uppercase letters, or lowercase letters in order to create a unique variable.
 
-Final product: (./password-generator/HW3passwordgenerator.png)
+Final product: image url(./Assets/password-generator/images/HW3passwordgenerator.png)
