@@ -41,19 +41,22 @@ function writePassword() {
     possibleCharacters += numbers;
   } if (includeSymbols) {
     possibleCharacters += symbols;
-  } else if (includeLower && includeUpper && includeNumbers && includeSymbols) {
+  }
+  // if the user does not choose one of the varibles
+  else if (!includeLower && !includeUpper && !includeNumbers && !includeSymbols) {
     alert("Please include at least one value to meet password requirements.");
   }
 
-
+  // randomized for loop to return any of the possible variables to the empty string
   for (var i = 0; i < characterAmount; i++) {
+    // + to add to the empty string
     password +=
       possibleCharacters[Math.floor(Math.random() * possibleCharacters.length)]
   }
 
   passwordText.value = password;
 
-  // console.log(password)
+  console.log(password)
 
 }
 
