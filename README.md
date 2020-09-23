@@ -15,4 +15,5 @@ Use:
 User can choose to use this tool for internet security
 User can choose from a variety of numbers, symbols, uppercase letters, or lowercase letters in order to create a unique variable.
 
-Final product: image url(./Assets/password-generator/images/HW3passwordgenerator.png)
+Final product:
+[!finalproduct](./Assets/password-generator/images/HW3passwordgenerator.png)
